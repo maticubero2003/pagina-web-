@@ -1,0 +1,196 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins', sans-serif;
+background:linear-gradient(180deg,#fff9fb 0%, #ffffff 100%);
+color:#444;
+line-height:1.6;
+scroll-behavior:smooth;
+}
+
+nav{
+background:rgba(255,255,255,0.95);
+backdrop-filter:blur(10px);
+padding:18px;
+text-align:center;
+box-shadow:0 4px 20px rgba(0,0,0,0.08);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+nav a{
+text-decoration:none;
+color:#666;
+margin:0 15px;
+font-weight:600;
+font-size:14px;
+letter-spacing:1px;
+transition:0.3s;
+position:relative;
+}
+
+nav a::after{
+content:"";
+position:absolute;
+width:0;
+height:2px;
+left:0;
+bottom:-5px;
+background:#ff7aa2;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#ff7aa2;
+}
+
+nav a:hover::after{
+width:100%;
+}
+
+section{
+max-width:1000px;
+margin:auto;
+padding:80px 25px;
+}
+
+h1{
+text-align:center;
+font-size:48px;
+margin-bottom:20px;
+color:#ff7aa2;
+}
+
+h2{
+text-align:center;
+margin-bottom:30px;
+color:#ff7aa2;
+font-size:28px;
+}
+
+img{
+display:block;
+margin:20px auto;
+border-radius:20px;
+box-shadow:0 12px 30px rgba(0,0,0,0.15);
+transition:0.4s;
+}
+
+img:hover{
+transform:scale(1.05);
+}
+
+h4, p{
+text-align:center;
+max-width:700px;
+margin:auto;
+color:#666;
+}
+
+ul{
+list-style:none;
+margin-top:20px;
+}
+
+ul li{
+background:white;
+padding:18px;
+margin-bottom:15px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+ul li:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+ul li a{
+text-decoration:none;
+color:#444;
+font-weight:600;
+}
+
+ul li a:hover{
+color:#ff7aa2;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+text-decoration:none;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:0.35s;
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.card p{
+padding:15px;
+font-weight:600;
+color:#444;
+}
+
+.card:hover{
+transform:translateY(-8px) scale(1.02);
+box-shadow:0 20px 40px rgba(0,0,0,0.18);
+}
+
+.card:hover p{
+color:#ff7aa2;
+}
+
+#redes ul li{
+text-align:center;
+}
+
+#redes ul li a{
+display:inline-block;
+padding:10px 20px;
+border-radius:20px;
+background:#fff;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+#redes ul li a:hover{
+background:#ff7aa2;
+color:white;
+}
+
+@media (max-width:600px){
+
+h1{
+font-size:30px;
+}
+
+h2{
+font-size:22px;
+}
+
+img{
+width:90%;
+}
+
+section{
+padding:60px 15px;
+}
+
+}
